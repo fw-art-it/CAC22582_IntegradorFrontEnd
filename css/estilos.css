@@ -95,26 +95,34 @@ body {
   }
 
   .sectionPrincipal{
-    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.8)), url("../assets/imagenes/ba1.jpg");
     height:80vh;
-    width: 100%;
     display: flex;
     justify-content:flex-end;
     align-items:center;
     padding-right: 10em;
   }
 
+  .imagenPrincipal {
+    filter: brightness(50%);
+    height:85vh;
+  }
+
+  .pbSobreimagen {
+    padding-bottom: 90px;
+  }
+
   .contenidoPrincipal{
       display: flex;
       flex-direction: column;
-      width: 45%;
+      width: 70%;
       text-align: right;
       color:white;
-      margin: 10 0 10 0;
+      padding: 0 0 40 0;
   }
 
   .parrafoPrincipal{
-    font-size: 1.2em;
+    font-size: 1em;
     line-height:2rem;
     text-align: right;
  }
@@ -330,22 +338,26 @@ body {
     padding-right: 0em;
   }
 
+  .pbSobreimagen {
+    padding-bottom: 190px;
+  }
+
   .contenidoPrincipal{
-      width: 80%;
+      width: 100%;
     }
 
   .parrafoPrincipal{
-    font-size: 0.9em;
-    line-height:1.3rem;
-    text-align: center;
+    font-size: 0.8em;
+    line-height:1rem;
+    text-align: end;
   }
 
   .botonesPrincipal {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .btn {
-    font-size:0.9rem;
+    font-size:0.8rem;
   }
 
   .btn-success {
@@ -375,17 +387,21 @@ body {
 /*tablet md*/
 @media screen and (min-width:768px) and (max-width:991px){
 
+  .pbSobreimagen {
+    padding-bottom: 140px;
+  }
+  
   .contenidoPrincipal{
-    width: 60%;
+    width: 75%;
   }
 
   .parrafoPrincipal{
-    font-size: 1em;
-    line-height:1.5rem;
+    font-size: 0.9em;
+    line-height:1.3rem;
   }
 
   .btn {
-    font-size:1rem;
+    font-size:0.9rem;
   }
 
   .btn-success {
@@ -415,16 +431,16 @@ body {
 @media screen and (min-width:992px) and (max-width:1199px){
 
   .contenidoPrincipal{
-    width: 55%;
+    width: 75%;
   }
 
   .parrafoPrincipal{
-    font-size: 1.2em;
-    line-height:1.8rem;
+    font-size: 1em;
+    line-height:1.5rem;
   }
 
   .btn {
-    font-size:1.2rem;
+    font-size:1rem;
   }
 
   .btn-success {
